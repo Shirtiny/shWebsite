@@ -1,9 +1,12 @@
 import React from "react";
+import Header from "./componets/header/header";
+import Glide from "./componets/glide/glide";
 
 const App = () => {
   return (
     <React.Fragment>
-      <h1>哈哈</h1>
+      <Header />
+      <Glide />
     </React.Fragment>
   );
 };
