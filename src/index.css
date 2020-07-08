@@ -5,13 +5,21 @@
   font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 125%;
+  height: 100vh;
 }
 
 body,
 #root {
   font-size: 0.8rem;
+  height: 100%;
 }
 
 :root {
