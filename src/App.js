@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./componets/header/header";
-import Glide from "./componets/glide/glide";
+import GlideBox from "./componets/glide/glide";
 
 const App = () => {
   return (
     <React.Fragment>
       <Header />
-      <Glide />
+      <GlideBox />
     </React.Fragment>
   );
 };

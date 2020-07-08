@@ -16,9 +16,9 @@ const Header = () => {
       </nav>
       {/* 折叠菜单 */}
       <div className="burger">
-        <div className="burger-line1">1</div>
-        <div className="burger-line2">2</div>
-        <div className="burger-line3">3</div>
+        <div className="burger-line1"></div>
+        <div className="burger-line2"></div>
+        <div className="burger-line3"></div>
       </div>
     </header>
   );

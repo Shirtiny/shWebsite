@@ -25,7 +25,3 @@ body,
   --text-color-light-gray: #c6c6c6;
   --backdrop-color: rgba(42, 42, 42, 0.69);
 }
-
-image {
-  width: 100%;
-}
