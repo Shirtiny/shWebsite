@@ -1,0 +1,36 @@
+{
+  "name": "shwebsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.dev.config.js",
+    "pro": "webpack --config webpack.pro.config.js",
+    "start": "webpack-dev-server --config webpack.dev.config.js --open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "animejs": "^3.2.0",
+    "isotope-layout": "^3.0.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "scrollreveal": "^4.0.6",
+    "smooth-scroll": "^16.1.3"
+  }
+}
