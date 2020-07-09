@@ -1,0 +1,45 @@
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: grid;
+  justify-items: center;
+  padding: 0 4rem;
+  max-width: 59rem;
+}
+
+.about-us {
+  padding-bottom: 1.6rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  color: var(--text-color-darker);
+}
+
+/* title下面的红色滑块 */
+.title::after {
+  content: "";
+  display: block;
+  background-color: var(--primary-color);
+  height: 0.2rem;
+  width: 80%;
+  margin-top: 0.7rem;
+  transform: translateX(10%);
+}
+
+.info {
+  font-size: 0.9rem;
+  margin: 1.4rem 0 3rem 0;
+  color: var(--text-color-dark-gray);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6.3rem);
+  column-gap: 5vw;
+}
