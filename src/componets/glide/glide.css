@@ -33,6 +33,10 @@
   margin: 2.4rem 0;
 }
 
+.slide-caption > * {
+  opacity: 0;
+}
+
 .blackdrop {
   background-color: var(--backdrop-color);
   z-index: 60;

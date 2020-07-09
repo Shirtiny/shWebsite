@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Glide from "@glidejs/glide";
+import anime from "animejs/lib/anime.es.js";
 import people_in_couch from "../../resources/images/people-in-couch-1024248.jpg";
 import working_man from "../../resources/videos/working-man.mp4";
 import "./glide.css";
@@ -8,6 +9,28 @@ const GlideBox = () => {
   useEffect(() => {
     const glide = new Glide(".glide", {
       autoplay: 5000,
+    });
+    const captions = document.querySelectorAll(".slide-caption");
+    //glide监听轮播挂载后和轮播执行后
+    glide.on(["mount.after", "run.after"], () => {
+      const caption = captions[glide.index];
+      // 动画
+      anime({
+        targets: caption.children,
+        opacity: [0, 1],
+        duration: 400,
+        easing: "linear",
+        //开始为300毫秒 之后每个target增加400毫秒延迟
+        delay: anime.stagger(400, { start: 300 }),
+        //第一个target Y偏移40 最后一个偏移10，最终归于0（初始位置）
+        translateY: [anime.stagger([40, 10]), 0],
+      });
+    });
+    //glide监听 轮播前
+    glide.on("run.before", () => {
+      document.querySelectorAll(".slide-caption > *").forEach((element) => {
+        element.style.opacity = 0;
+      });
     });
     glide.mount();
   }, []);

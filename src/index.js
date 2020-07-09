@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
 import App from "./App";
-import anime from "animejs/lib/anime.es.js";
 import ScrollReveal from "scrollreveal";
 import "font-awesome/css/font-awesome.css";
 import "@glidejs/glide/dist/css/glide.core.min.css";
