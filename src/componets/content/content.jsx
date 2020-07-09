@@ -4,6 +4,7 @@ import Showcase from "../showcase/showcase";
 import Service from "../services/service";
 import Team from "../team/team";
 import Data from "../data/data";
+import Activity from "../activity/activity";
 import "./content.css";
 
 const Content = () => {
@@ -14,6 +15,7 @@ const Content = () => {
       <Service />
       <Team />
       <Data />
+      <Activity />
     </div>
   );
 };

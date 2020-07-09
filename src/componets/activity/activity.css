@@ -1,0 +1,11 @@
+.activity-section {
+  margin-top: 4.4rem;
+}
+img {
+  width: 100%;
+}
+.activities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.2rem;
+}
