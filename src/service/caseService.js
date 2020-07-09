@@ -8,26 +8,32 @@ import people_in_couch from "../resources/images/people-in-couch-1024248.jpg";
 export function getCases() {
   return [
     {
+      index: 0,
       keywords: ["web", "mobile"],
       src: gray_laptop_computer,
     },
     {
+      index: 1,
       keywords: ["mobile"],
       src: photo_of_imac,
     },
     {
+      index: 2,
       keywords: ["web", "mobile"],
       src: apple_laptop_notebook,
     },
     {
+      index: 3,
       keywords: ["science"],
       src: apple_apple_device,
     },
     {
+      index: 4,
       keywords: ["science"],
       src: person_using_black,
     },
     {
+      index: 5,
       keywords: ["science", "web"],
       src: people_in_couch,
     },

@@ -49,7 +49,7 @@ const Showcase = () => {
       <div className="cases">
         {cases.map((item) => (
           <CaseItem
-            key={item.src}
+            key={item.index}
             className={item.keywords.join(" ")}
             src={item.src}
           />
