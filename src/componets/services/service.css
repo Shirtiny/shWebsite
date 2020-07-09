@@ -1,0 +1,11 @@
+.service {
+  padding-top: 6.6rem;
+}
+
+.service-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1.9rem;
+  row-gap: 1.7rem;
+}
