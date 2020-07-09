@@ -1,0 +1,12 @@
+.team {
+  margin-top: 2.4rem;
+  padding: 3.1rem 0 2.6rem 0;
+  max-width: unset;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.2rem;
+  margin-top: 4.3rem;
+}
