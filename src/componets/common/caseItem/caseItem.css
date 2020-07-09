@@ -1,0 +1,9 @@
+.case-item {
+  width: 24.7vw;
+  height: 20vw;
+  overflow: hidden;
+}
+
+.case-item img {
+    height: 100%;
+}

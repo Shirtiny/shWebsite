@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./componets/header/header";
 import GlideBox from "./componets/glide/glide";
-import About from "./componets/about/about";
+import Content from "./componets/content/content";
 
 const App = () => {
   return (
     <React.Fragment>
       <Header />
       <GlideBox />
-      <About />
+      <Content />
     </React.Fragment>
   );
 };

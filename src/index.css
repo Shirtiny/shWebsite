@@ -23,7 +23,7 @@ body,
 }
 
 :root {
-  --primary-color: #ff434f;
+  --primary-color: #00b7c3;
   --secondary-color: #e3e3e3;
   --text-color-lightest: #e7e9ec;
   --text-color-darker: #2e2e2e;
@@ -32,4 +32,5 @@ body,
   --text-color-dark-gray: #727272;
   --text-color-light-gray: #c6c6c6;
   --backdrop-color: rgba(42, 42, 42, 0.69);
+  --section-bg-color: #f9fbfb;
 }

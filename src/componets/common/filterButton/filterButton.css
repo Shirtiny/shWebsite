@@ -1,0 +1,21 @@
+.filter-btn {
+  margin: 0 0.4rem;
+  padding: 0.4rem 0.9rem;
+  background-color: var(--secondary-color);
+  color: var(--text-color-gray);
+  border: 0;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.filter-btn:focus,
+.filter-btn:active {
+  outline: none;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  color: white;
+  background-color: var(--primary-color);
+}

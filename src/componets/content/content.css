@@ -1,0 +1,49 @@
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+section {
+  display: grid;
+  justify-items: center;
+  padding: 0 4rem;
+  max-width: 59rem;
+}
+
+.section-bg {
+  position: relative;
+}
+
+.section-bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--section-bg-color);
+  height: 100vh;
+  width: 98.9vw;
+  z-index: -1;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  color: var(--text-color-darker);
+}
+
+/* title下面的红色滑块 */
+.section-title::after {
+  content: "";
+  display: block;
+  background-color: var(--primary-color);
+  height: 0.2rem;
+  width: 80%;
+  margin-top: 0.7rem;
+  transform: translateX(10%);
+}
+
+.info {
+  font-size: 0.9rem;
+  margin: 1.4rem 0 3rem 0;
+  color: var(--text-color-dark-gray);
+}

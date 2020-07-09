@@ -1,7 +1,7 @@
 import React from "react";
 import "./feature.css";
 
-const Feature = ({ iconClass, title, content }) => {
+const Feature = ({ iconClass = "", title = "", content = "" }) => {
   return (
     <div className="feature">
       <i className={`fa ${iconClass}`}></i>
