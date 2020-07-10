@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect, useCallback, useRef } from "react";
 import "./data.css";
 
 const Data = () => {
+  const dataRef = useRef(null);
+  const dataBckgroundPosition = useCallback(() => {
+    const dataEl = dataRef.current;
+    const rect = dataEl.getBoundingClientRect();
+    const { bottom, top } = rect;
+    //如果该元素出现在浏览器的视口内
+    if (bottom >= 0 && top <= window.innerHeight) {
+      dataEl.style.backgroundPosition = `center calc(50% - ${bottom / 6}px)`;
+    } else return;
+  }, [dataRef]);
+  useEffect(() => {
+    window.addEventListener("scroll", dataBckgroundPosition);
+    return () => {};
+  }, []);
   return (
     <section className="data-section">
-      <div className="data-pieces">
+      <div className="data-pieces" ref={dataRef}>
         <div className="data-piece">
           <i className="fa fa-code"></i>
           <div className="num">555</div>

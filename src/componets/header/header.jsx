@@ -6,7 +6,6 @@ import "./header.css";
 const Header = () => {
   const headerRef = useRef(null);
   const handleScroll = useCallback(() => {
-    console.log("调用");
     const classList = headerRef.current.classList;
     if (window.pageYOffset > 800 + 80) {
       if (!classList.contains("toFixed")) {
@@ -21,7 +20,7 @@ const Header = () => {
       }
       classList.remove("toFixed");
     }
-  }, []);
+  }, [headerRef]);
   const handleScrollThr = useCallback(
     _.throttle(handleScroll, 200, {
       trailing: false,
