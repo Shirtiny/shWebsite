@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Glide from "@glidejs/glide";
 import anime from "animejs/lib/anime.es.js";
 import people_in_couch from "../../resources/images/people-in-couch-1024248.jpg";
 import working_man from "../../resources/videos/working-man.mp4";
 import "./glide.css";
 
-const GlideBox = () => {
+const GlideBox = ({ smScroll }) => {
+  const handleClick = useCallback(() => {
+    smScroll.animateScroll(document.querySelector("#about-us"));
+  }, [smScroll]);
   useEffect(() => {
     const glide = new Glide(".glide", {
       autoplay: 5000,
@@ -36,7 +39,7 @@ const GlideBox = () => {
   }, []);
 
   return (
-    <div className="glide">
+    <div id="home" className="glide">
       {/* 轮播轨道 */}
       <div className="glide__track" data-glide-el="track">
         {/* 轮播容器 */}
@@ -47,7 +50,9 @@ const GlideBox = () => {
               <h3>
                 科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式大发展。用创新点缀人生，让科技融入理想
               </h3>
-              <button className="explore-btn">探索更多</button>
+              <button className="explore-btn" onClick={handleClick}>
+                探索更多
+              </button>
             </div>
             {/* 黑色遮罩 */}
             <div className="blackdrop"></div>
@@ -59,7 +64,9 @@ const GlideBox = () => {
               <h3>
                 科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式大发展。用创新点缀人生，让科技融入理想
               </h3>
-              <button className="explore-btn">探索更多</button>
+              <button className="explore-btn" onClick={handleClick}>
+                探索更多
+              </button>
             </div>
             {/* 黑色遮罩 */}
             <div className="blackdrop"></div>

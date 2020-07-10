@@ -34,8 +34,10 @@ const Header = () => {
     };
   }, []);
   return (
-    <header className="" ref={headerRef}>
-      <div className="logo">SH</div>
+    <header className="shHeader" ref={headerRef}>
+      <div className="logo">
+        <a href="#">SH</a>
+      </div>
       <nav>
         {config.navs.map((nav) => (
           <a key={nav.index} href={nav.href}>

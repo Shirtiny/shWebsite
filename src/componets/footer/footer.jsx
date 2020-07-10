@@ -20,7 +20,7 @@ const Footer = () => {
         <p className="icp-info">京ICP备 123456789-1 号</p>
         <p className="copyrights">&copy;2020 SH</p>
         <div className="scroll-to-top">
-          <a href="#">
+          <a href="#home">
             <i className="fa fa-arrow-up"></i>
           </a>
         </div>

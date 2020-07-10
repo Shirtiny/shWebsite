@@ -3,32 +3,37 @@
     {
       "index": 0,
       "name": "首页",
-      "href": "#"
+      "href": "#home"
     },
     {
       "index": 1,
       "name": "关于我们",
-      "href": "#"
+      "href": "#about-us"
     },
     {
       "index": 2,
       "name": "成功案例",
-      "href": "#"
+      "href": "#showcase"
     },
     {
       "index": 3,
       "name": "服务流程",
-      "href": "#"
+      "href": "#service"
     },
     {
       "index": 4,
       "name": "团队介绍",
-      "href": "#"
+      "href": "#team"
     },
     {
       "index": 5,
+      "name": "重要数字",
+      "href": "#data-section"
+    },
+    {
+      "index": 6,
       "name": "公司动态",
-      "href": "#"
+      "href": "#activity-section"
     }
   ]
 }

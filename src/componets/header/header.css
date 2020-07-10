@@ -5,6 +5,7 @@ header {
   display: grid;
 
   grid-template-columns: 1fr 2fr;
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 200;
@@ -44,6 +45,10 @@ header.removeFixed {
 header .logo {
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+header .logo a {
+  text-decoration: none;
   color: var(--text-color-lightest);
 }
 

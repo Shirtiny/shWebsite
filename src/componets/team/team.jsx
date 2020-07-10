@@ -4,7 +4,7 @@ import "./team.css";
 
 const Team = () => {
   return (
-    <section className="team section-bg">
+    <section id="team" className="team section-bg">
       <h2 className="section-title">团队介绍</h2>
       <div className="team-members">
         <TeamMember />

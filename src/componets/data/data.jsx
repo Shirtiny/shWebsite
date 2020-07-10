@@ -17,7 +17,7 @@ const Data = () => {
     return () => {};
   }, []);
   return (
-    <section className="data-section">
+    <section id="data-section" className="data-section">
       <div className="data-pieces" ref={dataRef}>
         <div className="data-piece">
           <i className="fa fa-code"></i>

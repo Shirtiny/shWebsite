@@ -8,7 +8,7 @@ const Service = () => {
     serviceItemService.getServiceItems()
   );
   return (
-    <section className="service">
+    <section id="service" className="service">
       <h2 className="section-title">服务流程</h2>
       <p className="info">
         网络综合公司包括提供网络基础服务和网络增值服务等业务

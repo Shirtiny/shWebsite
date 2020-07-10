@@ -32,7 +32,7 @@ const Showcase = () => {
   );
 
   return (
-    <section className="showcase section-bg">
+    <section id="showcase" className="showcase section-bg">
       <h2 className="section-title">成功案例</h2>
       <div className="filter-btns">
         {filterButtons.map((button) => (
