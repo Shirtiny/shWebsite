@@ -58,4 +58,5 @@ footer {
   position: fixed;
   right: 1.7rem;
   bottom: 1.7rem;
+  z-index: 20;
 }

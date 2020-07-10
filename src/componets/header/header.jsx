@@ -17,7 +17,7 @@ const Header = () => {
         classList.add("removeFixed");
         setTimeout(() => {
           classList.remove("removeFixed");
-        }, 400);
+        }, 200);
       }
       classList.remove("toFixed");
     }
