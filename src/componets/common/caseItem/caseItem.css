@@ -1,5 +1,5 @@
 .case-item {
-  width: 25vw;
+  width: calc(99vw / 4);
   height: 20vw;
   overflow: hidden;
 }

@@ -1,6 +1,7 @@
 .showcase {
   max-width: unset;
   padding: 3.6rem 0 0 0;
+  overflow: hidden !important;
 }
 
 .filter-btns {
@@ -8,5 +9,23 @@
 }
 
 .showcase .cases {
-  width: 100vw;
+  width: 99vw;
+}
+
+@media (max-width: 56.25rem) {
+  .showcase .cases {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 35.75rem) {
+  .showcase .cases {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 23.5rem) {
+  .showcase .cases {
+    width: 100vw;
+  }
 }
