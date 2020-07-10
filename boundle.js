@@ -304,7 +304,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".footer-menu .menu-items li {\\r\\n  list-style: none;\\r\\n}\\r\\n\\r\\n.footer-menu .menu-items li a {\\r\\n  font-weight: 300;\\r\\n  text-decoration: none;\\r\\n  color: var(--text-color-lightest);\\r\\n}\\r\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/componets/common/footerMenu/footerMenu.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".footer-menu {\\r\\n  text-align: center;\\r\\n}\\r\\n\\r\\n.footer-menu .menu-items li {\\r\\n  list-style: none;\\r\\n}\\r\\n\\r\\n.footer-menu .menu-items li a {\\r\\n  font-size: 0.8rem;\\r\\n  font-weight: 400;\\r\\n  text-decoration: none;\\r\\n  color: var(--text-color-lightest);\\r\\n}\\r\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/componets/common/footerMenu/footerMenu.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -403,7 +403,7 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".team {\\r\\n  margin-top: 2.4rem;\\r\\n  padding: 3.1rem 0 2.6rem 0;\\r\\n  max-width: unset;\\r\\n}\\r\\n\\r\\n.team-members {\\r\\n  display: grid;\\r\\n  grid-template-columns: repeat(4, 1fr);\\r\\n  column-gap: 1.2rem;\\r\\n  margin-top: 4.3rem;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/componets/team/team.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \".team {\\r\\n  margin-top: 2.4rem;\\r\\n  padding: 3.1rem 0 2.6rem 0;\\r\\n}\\r\\n\\r\\n.team-members {\\r\\n  display: grid;\\r\\n  grid-template-columns: repeat(4, 1fr);\\r\\n  column-gap: 1.2rem;\\r\\n  margin-top: 4.3rem;\\r\\n}\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/componets/team/team.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
