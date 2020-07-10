@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useCallback, useRef } from "react";
 import config from "../../config.json";
 import "./header.css";
 
 const Header = () => {
+  const headerRef = useRef(null);
+  const handleScroll = useCallback(() => {
+    const classList = headerRef.current.classList;
+    if (window.pageYOffset > 800 + 80) {
+      if (!classList.contains("toFixed")) {
+        classList.add("toFixed");
+      }
+    } else {
+      classList.remove("toFixed");
+    }
+  }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header>
+    <header className="" ref={headerRef}>
       <div className="logo">SH</div>
       <nav>
         {config.navs.map((nav) => (

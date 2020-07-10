@@ -1,5 +1,6 @@
 header {
   height: 4rem;
+  width: 100%;
   padding: 0 2rem;
   display: grid;
 
@@ -7,6 +8,24 @@ header {
   align-items: center;
   position: relative;
   z-index: 200;
+}
+
+header.toFixed {
+  position: fixed;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.3);
+  animation: headerFixed 0.4s ease-in-out forwards;
+}
+
+@keyframes headerFixed {
+  from {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 header .logo {
