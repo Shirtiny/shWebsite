@@ -1,9 +1,14 @@
+.footer-menu {
+  text-align: center;
+}
+
 .footer-menu .menu-items li {
   list-style: none;
 }
 
 .footer-menu .menu-items li a {
-  font-weight: 300;
+  font-size: 0.8rem;
+  font-weight: 400;
   text-decoration: none;
   color: var(--text-color-lightest);
 }
