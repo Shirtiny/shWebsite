@@ -9,3 +9,21 @@ img {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.2rem;
 }
+
+/* 屏幕宽度小于78.2rem时 (78.2*16)px 这里1rem为16px*/
+@media (max-width: 78.2rem) {
+  .activities {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.2rem;
+    row-gap: 2.4rem;
+  }
+}
+
+@media (max-width: 35.75rem) {
+  .activities {
+    grid-template-columns: 1fr;
+    column-gap: unset;
+    row-gap: 1.2rem;
+    width: 80vw;
+  }
+}

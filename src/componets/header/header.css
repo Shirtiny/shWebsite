@@ -116,13 +116,13 @@ header .burger {
     position: absolute;
     left: 0;
     top: 0;
-    width: 98.8vw;
-    height: 100vh;
+    width: 100vw;
+    height: 70vh;
     background-color: var(--primary-color);
     /* 指明由网格元素中占用空间最大的那一个来决定轨道的尺寸。 */
     grid-auto-rows: max-content;
     justify-items: end;
-    padding: 5rem 1.25rem;
+    padding: 5rem 2rem;
     animation: openHeader 1s ease forwards;
   }
 
@@ -140,7 +140,7 @@ header .burger {
   /* 打开burger header时的动画 */
   @keyframes openHeader {
     from {
-      transform: translate(98.8vw, -100vh);
+      transform: translate(100vw, -70vh);
       border-bottom-left-radius: 70rem;
     }
     75% {
@@ -184,5 +184,11 @@ header .burger {
 
   header.shHeader_burger .burger-line3 {
     transform: rotate(-45deg) translate(0.1rem, -0.1rem);
+  }
+}
+
+@media (max-width: 35.75rem) {
+  header.shHeader_burger nav {
+    height: 100vh;
   }
 }

@@ -9,3 +9,19 @@
   column-gap: 1.9rem;
   row-gap: 1.7rem;
 }
+
+@media (max-width: 56.25rem) {
+  .service-items {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: unset;
+  }
+}
+
+@media (max-width: 35.75rem) {
+  .service-items {
+    grid-template-columns: 1fr;
+    grid-template-rows: unset;
+    column-gap: unset;
+    width: 80vw;
+  }
+}

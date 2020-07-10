@@ -65,3 +65,39 @@
   cursor: pointer;
   font-size: 0.9rem;
 }
+
+@media (max-width: 56.25rem) {
+  .slide-caption h1 {
+    font-size: 2rem;
+  }
+
+  .slide-caption h3 {
+    font-size: 0.8rem;
+  }
+
+  .glide__arrows {
+    display: none;
+  }
+
+  .explore-btn {
+    padding: 0.5rem 1.4rem;
+  }
+}
+
+@media (max-width: 35.75rem) {
+  .slide-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .slide-caption h3 {
+    font-size: 0.6rem;
+  }
+
+  .explore-btn {
+    padding: 0.4rem 0.9rem;
+  }
+
+  .glide__arrows {
+    display: none;
+  }
+}

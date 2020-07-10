@@ -50,3 +50,24 @@
 .data-piece .data-desc {
   font-size: 0.9rem;
 }
+
+@media (max-width: 56.25rem) {
+  .data-pieces {
+    grid-template-columns: repeat(2, minmax(12.5rem, auto));
+    height: auto;
+    padding: 1rem;
+    row-gap: 1.2rem;
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 35.75rem) {
+  .data-pieces{
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 1rem;
+    row-gap: 1.2rem;
+    background-size: 400%;
+    justify-items: center;
+  }
+}
