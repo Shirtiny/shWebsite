@@ -17,6 +17,13 @@ header.toFixed {
   animation: headerFixed 0.4s ease-in-out forwards;
 }
 
+header.removeFixed {
+  position: fixed;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.3);
+  animation: headerRemoveFixed 0.4s ease forwards;
+}
+
 @keyframes headerFixed {
   from {
     opacity: 0;
@@ -25,6 +32,12 @@ header.toFixed {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes headerRemoveFixed {
+  to {
+    transform: translateY(-4rem);
   }
 }
 

@@ -1,23 +1,37 @@
 import React, { useEffect, useCallback, useRef } from "react";
 import config from "../../config.json";
+import _ from "lodash";
 import "./header.css";
 
 const Header = () => {
   const headerRef = useRef(null);
   const handleScroll = useCallback(() => {
+    console.log("调用");
     const classList = headerRef.current.classList;
     if (window.pageYOffset > 800 + 80) {
       if (!classList.contains("toFixed")) {
         classList.add("toFixed");
       }
     } else {
+      if (classList.contains("toFixed") && !classList.contains("removeFixed")) {
+        classList.add("removeFixed");
+        setTimeout(() => {
+          classList.remove("removeFixed");
+        }, 400);
+      }
       classList.remove("toFixed");
     }
   }, []);
+  const handleScrollThr = useCallback(
+    _.throttle(handleScroll, 200, {
+      trailing: false,
+    }),
+    []
+  );
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScrollThr);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScrollThr);
     };
   }, []);
   return (
