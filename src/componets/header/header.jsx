@@ -5,11 +5,18 @@ import "./header.css";
 
 const Header = () => {
   const headerRef = useRef(null);
+
+  const handleBurgerClick = useCallback(() => {
+    const classList = headerRef.current.classList;
+    classList.toggle("shHeader_burger");
+  }, [headerRef]);
+
   const handleScroll = useCallback(() => {
     const classList = headerRef.current.classList;
     if (window.pageYOffset > 800 + 80) {
       if (!classList.contains("toFixed")) {
         classList.add("toFixed");
+        classList.remove("shHeader_burger");
       }
     } else {
       if (classList.contains("toFixed") && !classList.contains("removeFixed")) {
@@ -21,19 +28,23 @@ const Header = () => {
       classList.remove("toFixed");
     }
   }, [headerRef]);
+
   const handleScrollThr = useCallback(
     _.throttle(handleScroll, 200, {
       trailing: false,
     }),
     []
   );
+
   useEffect(() => {
     window.addEventListener("scroll", handleScrollThr);
     return () => {
       window.removeEventListener("scroll", handleScrollThr);
     };
   }, []);
+
   return (
+    // shHeader_burger
     <header className="shHeader" ref={headerRef}>
       <div className="logo">
         <a href="#">SH</a>
@@ -48,10 +59,10 @@ const Header = () => {
         <i className="fa fa-search"></i>
       </nav>
       {/* 折叠菜单 */}
-      <div className="burger">
-        <div className="burger-line1"></div>
-        <div className="burger-line2"></div>
-        <div className="burger-line3"></div>
+      <div className="burger" onClick={handleBurgerClick}>
+        <div className="burger-line burger-line1"></div>
+        <div className="burger-line burger-line2"></div>
+        <div className="burger-line burger-line3"></div>
       </div>
     </header>
   );

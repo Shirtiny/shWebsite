@@ -69,3 +69,120 @@ header nav i {
 header .burger {
   display: none;
 }
+
+/* 屏幕宽度小于78.2rem时 (78.2*16)px 这里1rem为16px*/
+@media (max-width: 78.2rem) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.25rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .burger {
+    display: block;
+    position: relative;
+    width: 1rem;
+    height: 0.3rem;
+    justify-self: end;
+    cursor: pointer;
+  }
+
+  .burger-line {
+    width: 1rem;
+    height: 0.1rem;
+    background-color: var(--text-color-lightest);
+  }
+
+  .burger-line1 {
+    position: absolute;
+    top: -0.3rem;
+  }
+
+  .burger-line2 {
+    position: absolute;
+    top: 0.3rem;
+  }
+
+  /* burger打开时的header */
+  header.shHeader_burger nav {
+    display: grid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 98.8vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    /* 指明由网格元素中占用空间最大的那一个来决定轨道的尺寸。 */
+    grid-auto-rows: max-content;
+    justify-items: end;
+    padding: 5rem 1.25rem;
+    animation: openHeader 1s ease forwards;
+  }
+
+  header.shHeader_burger nav > * {
+    opacity: 0;
+    animation: showNavMenu 0.4s linear forwards 0.8s;
+    font-size: 1.1rem;
+    margin: 0.25rem 0;
+  }
+
+  header.shHeader_burger nav > i.fa {
+    margin-top: 0.6rem;
+  }
+
+  /* 打开burger header时的动画 */
+  @keyframes openHeader {
+    from {
+      transform: translate(98.8vw, -100vh);
+      border-bottom-left-radius: 70rem;
+    }
+    75% {
+      border-bottom-left-radius: 70rem;
+    }
+    to {
+    }
+  }
+
+  /* nav内的连接出现时的动画 */
+  @keyframes showNavMenu {
+    from {
+      opacity: 0;
+      transform: translate(1rem, 2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  header.shHeader_burger .burger-line {
+    background-color: white;
+    transition: 0.4s;
+  }
+
+  header.shHeader_burger .logo {
+    z-index: 40;
+  }
+
+  /* 打开时那三条线的动画 从3条线变成x */
+  /*  第一条线旋转45度右下移 第二条线右移更多然后消失 第三条线旋转-45度右上移 */
+  header.shHeader_burger .burger-line1 {
+    transform: rotate(45deg) translate(0.1rem, 0.1rem);
+  }
+
+  header.shHeader_burger .burger-line2 {
+    transform: translateX(0.2rem);
+    opacity: 0;
+  }
+
+  header.shHeader_burger .burger-line3 {
+    transform: rotate(-45deg) translate(0.1rem, -0.1rem);
+  }
+}
