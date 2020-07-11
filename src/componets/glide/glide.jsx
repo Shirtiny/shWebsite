@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useCallback } from "react";
 import Glide from "@glidejs/glide";
 import anime from "animejs/lib/anime.es.js";
-import people_in_couch from "../../resources/images/people-in-couch-1024248.jpg";
-import working_man from "../../resources/videos/working-man.mp4";
+import chengshi from "../../resources/images/chengshi.png";
+import ys from "../../resources/videos/ys.mp4";
 import "./glide.css";
 
 const GlideBox = ({ smScroll }) => {
@@ -46,9 +46,9 @@ const GlideBox = ({ smScroll }) => {
         <div className="glide__slides">
           <div className="glide__slide">
             <div className="slide-caption">
-              <h1>用创新点缀人生，让科技融入理想</h1>
+              <h1>SH</h1>
               <h3>
-                科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式大发展。用创新点缀人生，让科技融入理想
+                一点一点，累积更好的自己。每个认真生活的人都值得被认真对待
               </h3>
               <button className="explore-btn" onClick={handleClick}>
                 探索更多
@@ -56,13 +56,13 @@ const GlideBox = ({ smScroll }) => {
             </div>
             {/* 黑色遮罩 */}
             <div className="blackdrop"></div>
-            <img src={people_in_couch} alt="" />
+            <img src={chengshi} alt="" />
           </div>
           <div className="glide__slide">
             <div className="slide-caption left">
-              <h1>用创新点缀人生，让科技融入理想</h1>
+              <h1>SH</h1>
               <h3>
-                科技创新大平台，智慧生活新引擎。依靠科技进步推进经济跨越式大发展。用创新点缀人生，让科技融入理想
+                一点一点，累积更好的自己。每个认真生活的人都值得被认真对待
               </h3>
               <button className="explore-btn" onClick={handleClick}>
                 探索更多
@@ -70,7 +70,7 @@ const GlideBox = ({ smScroll }) => {
             </div>
             {/* 黑色遮罩 */}
             <div className="blackdrop"></div>
-            <video src={working_man} muted autoPlay loop></video>
+            <video src={ys} muted autoPlay loop></video>
           </div>
         </div>
         {/* 两边的箭头 */}

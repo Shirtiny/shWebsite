@@ -7,18 +7,18 @@ export function getFilterButtons() {
     },
     {
       index: 1,
-      label: "WEB",
-      dataFilter: ".web",
+      label: "城市",
+      dataFilter: ".city",
     },
     {
       index: 2,
-      label: "移动",
-      dataFilter: ".mobile",
+      label: "天空",
+      dataFilter: ".sky",
     },
     {
       index: 3,
-      label: "科研",
-      dataFilter: ".science",
+      label: "花",
+      dataFilter: ".flower",
     },
   ];
 }

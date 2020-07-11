@@ -1,15 +1,15 @@
 import React from "react";
-import man from "../../../resources/images/man-wearing-black-suit-2955376.jpg";
+import miku from "../../../resources/images/miku_summer.jpg";
 import "./teamMember.css";
 
 const TeamMember = () => {
   return (
     <div className="team-member">
       <div className="profile-image">
-        <img src={man} alt="" />
+        <img src={miku} alt="" />
       </div>
       <h4 className="name">张三</h4>
-      <p className="position">前端工程师</p>
+      <p className="position">路人甲友人A</p>
       <ul className="social-links">
         <li>
           <a href="#">

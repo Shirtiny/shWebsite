@@ -56,7 +56,7 @@ const Header = () => {
           </a>
         ))}
 
-        <i className="fa fa-search"></i>
+        {/* <i className="fa fa-search"></i> */}
       </nav>
       {/* 折叠菜单 */}
       <div className="burger" onClick={handleBurgerClick}>

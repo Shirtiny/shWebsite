@@ -26,7 +26,7 @@ const Data = () => {
         </div>
         <div className="data-piece">
           <i className="fa fa-star"></i>
-          <div className="num">124</div>
+          <div className="num">123</div>
           <div className="data-desc">收藏</div>
         </div>
         <div className="data-piece">
@@ -36,7 +36,7 @@ const Data = () => {
         </div>
         <div className="data-piece">
           <i className="fa fa-folder"></i>
-          <div className="num">16</div>
+          <div className="num">233</div>
           <div className="data-desc">个项目</div>
         </div>
       </div>

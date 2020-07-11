@@ -1,6 +1,6 @@
 .case-item {
-  width: calc(99vw / 4);
-  height: 20vw;
+  width: calc(98.8vw / 4);
+  height: 17vw;
   overflow: hidden;
 }
 
@@ -11,6 +11,7 @@
 @media (max-width: 56.25rem) {
   .case-item {
     width: calc(100vw / 3);
+    height: 20vw;
   }
 }
 
@@ -24,6 +25,6 @@
 @media (max-width: 23.5rem) {
   .case-item {
     width: calc(100vw);
-    height: 50vw;
+    height: 60vw;
   }
 }

@@ -6,7 +6,7 @@
 .data-pieces {
   width: 98.8vw;
   height: 12.8rem;
-  background-image: url(../../resources/images/adult-business-computer-contemporary-380769.jpg);
+  background-image: url(../../resources/images/hechuan.png);
   background-size: cover;
   background-position: center;
 
@@ -57,7 +57,7 @@
     height: auto;
     padding: 1rem;
     row-gap: 1.2rem;
-    background-size: 150%;
+    background-size: 200%;
   }
 }
 
@@ -67,7 +67,7 @@
     height: auto;
     padding: 1rem;
     row-gap: 1.2rem;
-    background-size: 400%;
+    background-size: 500%;
     justify-items: center;
   }
 }

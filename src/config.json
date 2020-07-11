@@ -2,7 +2,7 @@
   "navs": [
     {
       "index": 0,
-      "name": "首页",
+      "name": "主页",
       "href": "#home"
     },
     {
@@ -12,12 +12,12 @@
     },
     {
       "index": 2,
-      "name": "成功案例",
+      "name": "几张图片",
       "href": "#showcase"
     },
     {
       "index": 3,
-      "name": "服务流程",
+      "name": "用爱发电",
       "href": "#service"
     },
     {
@@ -27,12 +27,12 @@
     },
     {
       "index": 5,
-      "name": "重要数字",
+      "name": "几个数字",
       "href": "#data-section"
     },
     {
       "index": 6,
-      "name": "公司动态",
+      "name": "团队动态",
       "href": "#activity-section"
     }
   ]

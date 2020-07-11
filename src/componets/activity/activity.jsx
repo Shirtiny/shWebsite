@@ -5,8 +5,8 @@ import "./activity.css";
 const Activity = () => {
   return (
     <section id="activity-section" className="activity-section">
-      <h2 className="section-title">公司动态</h2>
-      <p className="info">关注公司动态，第一时间获取消息</p>
+      <h2 className="section-title">团队动态</h2>
+      <p className="info">关注团队动态，第一时间获取消息</p>
       <div className="activities">
         <ActivityCard />
         <ActivityCard />

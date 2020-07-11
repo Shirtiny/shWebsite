@@ -33,5 +33,5 @@ body,
   --text-color-light-gray: #c6c6c6;
   --backdrop-color: rgba(42, 42, 42, 0.69);
   --section-bg-color: #f9fbfb;
-  --footer-color: #181818;
+  --footer-color: rgb(82, 147, 147);
 }
