@@ -6,6 +6,8 @@ import Footer from "./componets/footer/footer";
 import ScrollReveal from "scrollreveal";
 import anime from "animejs/lib/anime.es.js";
 import SmoothScroll from "smooth-scroll";
+import { Helmet } from "react-helmet";
+import ico from "./resources/images/subeditor.ico"
 
 const App = () => {
   const [smScroll, setSmScroll] = useState(null);
@@ -41,6 +43,11 @@ const App = () => {
   }, []);
   return (
     <React.Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>ShWebsite - SH企业静态官网Demo</title>
+        <link rel="icon" href={ico} />
+      </Helmet>
       <Header />
       <GlideBox smScroll={smScroll} />
       <Content />

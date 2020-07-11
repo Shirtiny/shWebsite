@@ -12,15 +12,27 @@ const Footer = () => {
           <p>电话：+186123123123</p>
           <p>传真：+186186186</p>
           <p>电子邮箱：shirtiny@gmail.com</p>
+          <div className="link-me">
+            <div className="link-me-group">
+              <i className="fa fa-github"></i>
+              <a href="https://github.com/Shirtiny">
+                https://github.com/Shirtiny
+              </a>
+            </div>
+            <div className="link-me-group">
+              <i className="fa fa-home"></i>
+              <a href="https://shirtiny.cn">https://shirtiny.cn</a>
+            </div>
+          </div>
         </div>
         <FooterMenu />
         <FooterMenu />
         <FooterMenu />
         <FooterMenu />
         <p className="icp-info">京ICP备 123456789-1 号</p>
-        <p className="copyrights">&copy;2020 SH</p>
+        <p className="copyrights">&copy;2020 SH </p>
         <div className="scroll-to-top">
-          <a href="#home">
+          <a href="#home" shtitle="返回顶部">
             <i className="fa fa-arrow-up"></i>
           </a>
         </div>
